@@ -1,0 +1,5 @@
+# Nomes dos containers do docker-compose.yml
+A peer-a 5000
+B peer-b 5000
+C peer-c 5000
+D peer-d 5000

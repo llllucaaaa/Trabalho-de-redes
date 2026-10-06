@@ -1,0 +1,5 @@
+# ID  HOST           PORTA   (rede real: troque pelos IPs das maquinas)
+A     192.168.0.10   5000
+B     192.168.0.11   5000
+C     192.168.0.12   5000
+D     192.168.0.13   5000

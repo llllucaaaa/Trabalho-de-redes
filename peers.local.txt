@@ -1,0 +1,5 @@
+# Tudo no mesmo PC (so para desenvolver; nao vale para o criterio 9)
+A 127.0.0.1 5001
+B 127.0.0.1 5002
+C 127.0.0.1 5003
+D 127.0.0.1 5004

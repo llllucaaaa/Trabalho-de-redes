@@ -1,0 +1,31 @@
+services:
+  peer-a:
+    build: .
+    container_name: peer-a
+    command: ["A", "--config", "peers.docker.txt", "--dir", "/app/tmp"]
+    volumes: ["./data/a:/app/tmp"]
+    stdin_open: true
+    tty: true
+  peer-b:
+    build: .
+    container_name: peer-b
+    command: ["B", "--config", "peers.docker.txt", "--dir", "/app/tmp"]
+    volumes: ["./data/b:/app/tmp"]
+    stdin_open: true
+    tty: true
+  peer-c:
+    build: .
+    container_name: peer-c
+    command: ["C", "--config", "peers.docker.txt", "--dir", "/app/tmp"]
+    volumes: ["./data/c:/app/tmp"]
+    stdin_open: true
+    tty: true
+  # 4o peer: so sobe com "docker compose --profile novo up -d peer-d"
+  peer-d:
+    build: .
+    container_name: peer-d
+    profiles: ["novo"]
+    command: ["D", "--config", "peers.docker.txt", "--dir", "/app/tmp"]
+    volumes: ["./data/d:/app/tmp"]
+    stdin_open: true
+    tty: true
